@@ -1,5 +1,5 @@
 # MyBank
-A Banking Web Application Using J2EE JSP Servlet HTML5 CSS3 and SQL-Server.
+A Banking Web Application Using J2EE, JSP, Servlet, HTML5, CSS3, Eclipse IDE and SQL-Server.
 
 ABOUT PROJECT:
 This is a Banking WebApp created by me using J2EE. There are two part of whole project. The first part is to make same application using JAVA Swing and Applet interface and second part is to make a web application using MVC design and pattern. In this web application, I have used the same Models created during first part of project just View and Controllers are changed. In this application, a user can create an account online and perform banking transactions. 
