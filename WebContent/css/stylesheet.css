@@ -1,1 +1,246 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Halvetica, sans-serif;
+  font-size: 15px;
+  line-height:1.5;
+  background-color: #f4f4f4;
+}
+
+/*Global class
+width: 80% will adjust according to size of window. 
+margin: auto will move everything to the middle.
+overflow:hidden will not let any div to overflow any other div.Anything will not go outside of div.
+*/
+.container{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+ul{
+	padding:0;
+	margin: 0;
+}
+
+.button_1{
+	height: 38px;
+	width:100px;
+	background: #e8491d;
+	border:none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;	
+	transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button_1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_1:hover span {
+  padding-right: 25px;
+}
+
+.button_1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Header*/
+
+header{
+	background: #35424a;
+	color: #ffffff; /*Text color white for dark background.*/
+	padding-top:30px;
+	min-height:70px; /*This will let the header responsive. We are setting minimum height so that in any device the height of the 
+	header will not be less than this size.*/
+	border-bottom: #e8491d 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none; /*Removing underline and blue color of by default links.*/
+	text-transform: uppercase; /*Setting case to uppercase.*/
+	font-size: 16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px; /*We want padding on right and left side only.. this order specified here goes like...
+			 0(Top) 20px(Right) 0(Bottom) 20px(Left) */
+}
+
+header #branding{
+	float:left; /*The logo should be left side.*/
+}
+
+header #branding img{
+	margin:0;
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+} 
+
+/*Hiding the second menu*/
+/*
+header nav select{
+	display:none;
+}
+*/
+/*Hiding the primary menu and showing the drop down menu at certain screen width.*/
+/*
+@media (max-width: 960px){
+	header nav ul{
+		display: none;
+	}
+	header nav select{
+		background: #35424a;
+		display: inline-block;
+		text-decoration: none; 
+		text-transform: uppercase; 
+		font-size: 16px;
+	}
+}
+*/
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+/*Showcase*/
+
+#showcase{
+	min-height: 400px;
+	background: url('../img/TD_1.jpg') no-repeat 0 -400px; /*here 0 -400px moves the image up little bit. 0 means x-axis.*/
+	opacity: 0.8;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size:55px;
+	margin-bottom: 10px;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+/*Options*/
+
+#options{
+	padding:15px;
+	color:#ffffff;
+	background: #35424a;
+}
+
+#options h1{
+	float: left;	
+}
+
+#options form{
+	float: right;
+	margin-top: 15px;
+}
+
+#options input{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+
+#formButton{
+	margin-top:20px;
+	float:left;
+}
+
+#show{
+	float:none;
+	margin-top:60px;
+	margin-bottom:-20px;
+}
+
+.table{
+	color:#ffffff;
+	font-size:15px;
+}
+
+.drpdwn{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+/*ViewBalance Page Tables*/
+
+#ViewChecking{
+	float: none;
+	margin-top: 15px;	
+	color: #ffffff;
+    font-weight: bold;
+}
+
+#ViewSavings{
+	float: none;
+	margin-top: 15px;	
+	color: #ffffff;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+/*Boxes*/
+
+#boxes{
+	margin-top: 40px;
+}
+
+/*Individual box*/
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding: 10px;
+}
+
+#boxes .box img{
+	width: 200px;
+	height:150px;
+}
+
+/*Footer*/
+
+footer{
+	padding:20px;
+	margin-top:20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
 
