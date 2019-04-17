@@ -1,4 +1,4 @@
-# MyBank
+# Banking Web Application
 A Banking Web Application Using J2EE, JSP, Servlet, HTML5, CSS3, Eclipse IDE and SQL-Server.
 
 ABOUT PROJECT:
